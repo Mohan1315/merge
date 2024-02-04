@@ -1,0 +1,6 @@
+hello 
+mohan
+manjhi 
+i am 
+fmt command 
+to format a text file.
