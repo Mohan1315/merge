@@ -1,0 +1,25 @@
+Assignment A1.1
+There are two algorithms A1 and A2 with expected number of operations given by f1(n) and f2(n) with orders O(g1(n)) and O(g2(n)) respectively.
+What will be complexity if A1 and A2 algorithms are executed one after the other.
+What will be complexity if A1 and A2 are combined together such that for every step of A1, A2 is executed once.
+
+If algorithms A1 and A2 are executed one after the other, the overall complexity will be determined by the algorithm with the higher order of complexity.
+because we know that the order of complexity of algorithm A1 is O(g1(n)) and the order of complexity of algorithm A2 is O(g2(n)).
+therefore the order of complexity of the combined algorithms A1 and A2 will be max(O(g1(n)), O(g2(n))).
+
+If algorithms A1 and A2 are combined such that for every step of A1, A2 is executed once, the overall complexity will be the product of the complexity of A1 and A2.
+we also know that the order of complexity of algorithm A1 is O(g1(n)) and the order of complexity of algorithm A2 is O(g2(n)).
+then the order of complexity of the combined algorithms A1 and A2 will be O(g1(n) * g2(n)).
+This is because for every step of A1, A2 is executed once, so the overall complexity will be the product of the complexity of A1 and A2.
+eg : if assume A1 time complexity is O(n) and A2 complexity is also O(n) then the time coplexity will be O(n*n) mean O(n^2).
+
+
+
+
+Assignment A2.1
+Write java code for evaluating a postfix expression that involves + - * / binary operators.
+
+Assignment A2.2
+Write java code for converting an expression in infix notation to equivallent postfix notation. Assume + - * / binary operators.
+
+
