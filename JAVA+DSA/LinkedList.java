@@ -72,6 +72,62 @@ public class LinkedList {
         size--;
         return value;
     }
+//    void selectionSort()
+//    {
+//        Node temp = head;
+//
+//        // Traverse the List
+//        while (temp) {
+//            Node min = temp;
+//            Node r = temp.next;
+//
+//            // Traverse the unsorted sublist
+//            while (r) {
+//                if (min.data > r.data)
+//                    min = r;
+//
+//                r = r.next;
+//            }
+//
+//            // Swap Data
+//            int x = temp.data;
+//            temp.data = min.data;
+//            min.data = x;
+//            temp = temp.next;
+//        }
+//    }
+    void Selection(int n){
+        Node temp1 = head;
+        Node temp2 = temp1.next;
+        Node min = head;
+        int count = 0;
+        while (temp1.next!= null){
+            min = temp1;
+            temp2 = temp1.next;
+            while (temp2!=null){
+                if (temp2.data< min.data){
+                    min=temp2;
+
+                }
+                temp2=temp2.next;
+            }
+            int tempo = temp1.data;
+            temp1.data = min.data;
+            min.data = tempo;
+            count++;
+            temp1=temp1.next;
+            if (count==n){
+                Node Pr = head;
+                while (Pr!=null){
+                    System.out.print(Pr.data+" ");
+                    Pr = Pr.next;
+                }
+            }
+        }
+    }
+
+// This code is contributed by shivanisinghss2110
+
 
     public void print(){
         Node temp = head;
@@ -90,12 +146,21 @@ public class LinkedList {
         LinkedList ll = new LinkedList();
 //        ll.addFirst(1);
 //        ll.addLast(2);
-//        ll.addLast(3);
-        ll.add(0,1);
-        ll.add(1,2);
-        ll.add(2,3);
-        ll.add(1,4);
-        System.out.println(ll.removeFirst());
+        ll.addLast(5);
+        ll.addLast(4);
+        ll.addLast(6);
+        ll.addLast(3);
+        ll.addLast(8);
+        ll.addLast(2);
+
+//        ll.add(0,5);
+//        ll.add(1,4);
+//        ll.add(2,6);
+//        ll.add(1,3);
+//        System.out.println(ll.removeFirst());
         ll.print();
+        ll.Selection(5);
+//        ll.print();
+
     }
 }

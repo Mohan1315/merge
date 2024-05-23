@@ -1,0 +1,23 @@
+atfile.txt
+batch.txt
+command screeshot
+command screeshot.zip
+employees.txt
+employee.txt
+file.txt
+fmtcmd.txt
+letter
+list1.txt
+list2.txt
+main.c
+main.o
+Makefile
+Mohan Manjhi
+Mohan Manjhi.zip
+my_app
+nohup.out
+tarFile.tar
+text.c
+textFile.tar
+text.h
+text.o
