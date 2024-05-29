@@ -1,4 +1,4 @@
 package NumberSystem;
 
-public class DecimalToBinary 5{
+public class DecimalToBinary {
 }
