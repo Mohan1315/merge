@@ -48,14 +48,15 @@ public class merge_Sort {
         }
 
 
-        int fun(int n){
+       int fun(int n){
             int m=0;
             for(int i=1; i<=n; i*=2){
                 for (int j = 0; j < i; j++) {
                     m+=1;
-                    return m;
+
                 }
             }
+
         }
     }
     public static void main(String args[]){
